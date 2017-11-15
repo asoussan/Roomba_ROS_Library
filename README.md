@@ -8,7 +8,7 @@
 
 ### Introduction
 
-This ROS library is created to control iRobot Roomba create connected to raspberry pi 3 through USB port.
+This ROS library is created to control iRobot Create 2 connected to raspberry pi 3 through USB serial cable.
 iRobot Roomba Create can be purchased from here: http://store.irobot.com/default/create-programmable-programmable-robot-irobot-create-2/RC65099.html?cgid=us
 Raspberry Pi 3 can be purchased from here: https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
 
@@ -17,4 +17,58 @@ Raspberry Pi 3 can be purchased from here: https://www.raspberrypi.org/products/
 2. This website (https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) provides information about how to connect raspberry to WiFi.
 3. Ubuntu should be installed into the raspberry pi. Installation instructiions and pertinent information can be found here: https://wiki.ubuntu.com/ARM/RaspberryPi
 4. The instructions for installing ROS can be found here:http://wiki.ros.org/Installation/UbuntuARM make sure ROS Kinetic is installed.
+5. A library to control iRobot Create 2 is required. This instructio to install this library is here: https://pypi.python.org/pypi/pycreate2/0.7.3
 
+### Using ROS
+1. Create workspace by using command lines:
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin_init_workspace
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
+```
+2. Create a package in your workspace:
+```
+cd ~/catkin_ws/src
+catkin_create_pkg roomba rospy
+```
+3. Go into folder 
+```
+cd ~/catkin_ws/src/roomba/src
+```
+and paste the ROS code in here. Change the access permission to the two python files by using
+```
+chmod u+x filename.py
+```
+Then go back to catkin_ws using `cd ~/catkin_ws`. Type command `source devel/setup.bash`
+
+4. Open a new terminal window and log into your raspberry pi by using `ssh pi@ipaddress`. Run roscore: 
+```
+roscore
+```
+5. Open a second terminal window as the publisher: 
+```
+rosrun roomba sensor.py
+```
+6. Open a third terminal window as the subscriber: 
+```
+rosrun roomba wheel.py
+```
+7. Now the roomba should be running while avoiding obstacles. Open another terminal, to list all active topics, use:
+```
+rostopic list
+```
+To check the message the publisher is sending, use:
+```
+rostopic echo IR_sensor
+```
+To find the publisher and the subscribers of the topic, use:
+```
+rostopic info IR_sensor
+```
+To find out more rostopic functions, use:
+```
+rostopic -h
+```
