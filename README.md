@@ -17,7 +17,7 @@ Raspberry Pi 3 can be purchased from here: https://www.raspberrypi.org/products/
 2. This website (https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) provides information about how to connect raspberry to WiFi.
 3. Ubuntu should be installed into the raspberry pi. Installation instructiions and pertinent information can be found here: https://wiki.ubuntu.com/ARM/RaspberryPi
 4. The instructions for installing ROS can be found here:http://wiki.ros.org/Installation/UbuntuARM make sure ROS Kinetic is installed.
-5. A library to control iRobot Create 2 is required. This instructio to install this library is here: https://pypi.python.org/pypi/pycreate2/0.7.3
+5. A library to control iRobot Create 2 is required. This instructions to install this library is here: https://pypi.python.org/pypi/pycreate2/0.7.3
 
 ### Using ROS
 1. Create workspace by using command lines:
