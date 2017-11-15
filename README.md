@@ -38,9 +38,9 @@ catkin_create_pkg roomba rospy
 ```
 cd ~/catkin_ws/src/roomba/src
 ```
-and paste the ROS code in here. Change the access permission to the two python files by using
+and paste the ROS code in here using 
 ```
-chmod u+x filename.py
+git clone https://github.com/Talisker10/Roomba_ROS_Library
 ```
 Then go back to catkin_ws using `cd ~/catkin_ws`. Type command `source devel/setup.bash`
 
