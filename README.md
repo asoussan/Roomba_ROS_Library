@@ -60,15 +60,15 @@ rosrun roomba wheel.py
 ```
 rostopic list
 ```
-To check the message the publisher is sending, use:
+8.To check the message the publisher is sending, use:
 ```
 rostopic echo IR_sensor
 ```
-To find the publisher and the subscribers of the topic, use:
+9.To find the publisher and the subscribers of the topic, use:
 ```
 rostopic info IR_sensor
 ```
-To find out more rostopic functions, use:
+10.To find out more rostopic functions, use:
 ```
 rostopic -h
 ```
