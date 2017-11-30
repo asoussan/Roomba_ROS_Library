@@ -80,5 +80,5 @@ rostopic -h
 ![Flow Chart](https://github.com/Talisker10/Roomba_ROS_Library/blob/master/Figures/Flow%20Chart.jpg)
 
 ### Video Demo
-![Watch the video](https://www.youtube.com/watch?v=T978V-y5D40)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/T978V-y5D40" frameborder="0" allowfullscreen></iframe>
+![Video Demo](https://www.youtube.com/watch?v=T978V-y5D40)
+[![Video Demo](https://img.youtube.com/vi/T978V-y5D40/0.jpg)](https://www.youtube.com/watch?v=T978V-y5D40)
