@@ -81,3 +81,5 @@ rostopic -h
 
 ### Video Demo
 ![Watch the video](https://www.youtube.com/watch?v=T978V-y5D40)
+[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+
