@@ -52,23 +52,28 @@ roscore
 ```
 rosrun roomba sensor.py
 ```
-6. Open a third terminal window as the subscriber: 
+6. Open a third terminal window as the navigator (subscriber and publisher)
+```
+rosrun roomba navigator.py
+```
+7. Open a third terminal window as the subscriber: 
 ```
 rosrun roomba wheel.py
 ```
-7. Now the roomba should be running while avoiding obstacles. Open another terminal, to list all active topics, use:
+8. Now the roomba should be running while avoiding obstacles. Open another terminal, to list all active topics, use:
 ```
 rostopic list
 ```
-8.To check the message the publisher is sending, use:
+9.To check the message the publisher is sending, use:
 ```
 rostopic echo IR_sensor
 ```
-9.To find the publisher and the subscribers of the topic, use:
+10.To find the publisher and the subscribers of the topic, use:
 ```
 rostopic info IR_sensor
 ```
-10.To find out more rostopic functions, use:
+11.To find out more rostopic functions, use:
 ```
 rostopic -h
 ```
+### Flow Chart
