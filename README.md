@@ -76,8 +76,3 @@ rostopic info IR_sensor
 ```
 rostopic -h
 ```
-### Flow Chart
-![Flow Chart](https://github.com/Talisker10/Roomba_ROS_Library/blob/master/Figures/Flow%20Chart.jpg)
-
-### Video Demo
-[![Video Demo](https://img.youtube.com/vi/T978V-y5D40/0.jpg)](https://www.youtube.com/watch?v=T978V-y5D40)
