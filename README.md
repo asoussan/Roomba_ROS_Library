@@ -1,4 +1,4 @@
-# Roomba ROS Library
+# Roomba ROS with State Machine
 
 ### **_Tongdi Zhou_** 
 
@@ -58,7 +58,7 @@ rosrun roomba navigator.py
 ```
 7. Open a third terminal window as the subscriber: 
 ```
-rosrun roomba wheel.py
+rosrun roomba statemachine.py
 ```
 8. Now the roomba should be running while avoiding obstacles. Open another terminal, to list all active topics, use:
 ```
